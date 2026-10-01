@@ -8,7 +8,6 @@
 //参数，接收命令行参数 String[] args
 //声明可能抛异常，做数据库操作时必须加 throws Exception
 package com.qiu;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
