@@ -6,4 +6,13 @@
     <select id="findAll" resultType="com.qiu.entity.User">
         SELECT * FROM user
     </select>
+    <update id="update" parameterType="com.qiu.entity.User">
+        UPDATE user SET name = #{name},age=#{age} WHERE id=#{id}
+    </update>
+    <insert id="insert" parameterType="com.qiu.entity.User">
+        INSERT INTO user(name,age) VALUES (#{name},#{age})
+    </insert>
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        DELETE FROM user WHERE id=#{id}
+    </delete>
 </mapper>
